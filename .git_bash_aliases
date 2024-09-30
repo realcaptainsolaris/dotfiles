@@ -1,0 +1,22 @@
+alias gits='git status'
+alias giffek='git diff --check'
+alias giff='git diff && git diff --staged && git diff HEAD^ HEAD'
+alias glop='git log -p'
+alias superdiff='git log --follow -p -- $@'
+alias glame='git blame -w -M3 $@'
+alias gline='git log --oneline'
+alias glog='git log --graph'
+alias glast='git log -1 HEAD --stat'
+alias gmit='git commit -m"$@"'
+alias gadd='git add $@'
+alias gadda='git add .'
+alias gush='git push'
+alias gull='git pull'
+alias gout='git checkout $@'
+alias gmerge='git merge $@'
+alias gash='git stash'
+alias gasha="git stash apply"
+alias gonf='git config --global -l'
+alias greate='git checkout -b $@' 
+alias glob="git log --graph --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" 
+alias granches="git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
